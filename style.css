@@ -1,0 +1,294 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffc0cb; /* soft pink background */
+  padding: 10px 30px;
+}
+
+/* Logo + Tagline */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 280px;
+  height: 200px;
+}
+
+.brand-text h1 {
+  font-size: 1.5rem;
+  color: #d63384;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Navigation */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-bar {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.shop-btn {
+  background-color: #d63384;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.cart {
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffe6f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: #d63384;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.search-cart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-cart input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.shop-btn {
+  background-color: #d63384;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.shop-btn .badge {
+  background: #fff;
+  color: #d63384;
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  color: #d63384;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.hero-buttons .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #d63384;
+  color: #fff;
+}
+
+.btn.secondary {
+  background-color: #fff;
+  border: 2px solid #d63384;
+  color: #d63384;
+}
+
+.hero-image {
+  text-align: center;
+  position: relative;
+}
+
+.best-seller {
+  background: #d63384;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-image img {
+  max-width: 250px;
+  margin-top: 20px;
+}
+
+.handmade-tag {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Product Cards */
+.product-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #d63384;
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.card-btn {
+  background-color: #d63384;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
