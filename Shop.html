@@ -5,37 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kiran's Krochet</title>
   <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
   <!-- Header -->
-<header class="site-header">
-  <!-- Logo + Tagline -->
-  <div class="logo-area">
-    <img src="C:\Users\Prasad\OneDrive\Documents\HTML\Kirans Krochet logo .png" alt="Kirans Krochet Logo" class="logo" width="350" height="250">
-    <div class="brand-text">
+  <header class="site-header">
+    <div class="logo-area">
+      <img src="Images/Kirans Krochet logo .png" alt="Kirans Krochet Logo" class="logo">
     </div>
-  </div>
-
-  <!-- Navigation -->
-  <nav class="nav-menu">
-    <ul>
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">SHOP</a></li>
-      <li><a href="#">ABOUT</a></li>
-      <li><a href="#">CONTACT</a></li>
-    </ul>
-  </nav>
-
-  <!-- Search + Shop + Cart -->
-  <div class="header-actions">
-    <input type="text" placeholder="Search patterns, yarns..." class="search-bar">
-    <button class="shop-btn">Shop Now</button>
-    <div class="cart-icon">
-      <span class="cart">&#128722;</span>
-      <span class="badge">2</span>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="Shop.html">SHOP</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <input type="text" placeholder="Search patterns, yarns..." class="search-bar">
+      <button class="shop-btn">Shop Now</button>
+      <div class="cart-icon">
+        <span class="cart">&#128722;</span>
+        <span class="badge">0</span>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -49,7 +43,7 @@
     </div>
     <div class="hero-image">
       <span class="best-seller">Best Seller</span>
-      <img src="bunny.png" alt="Crocheted Bunny">
+      <img src="Images/Amigurimi.jpg" alt="Crocheted Bunny">
       <p class="handmade-tag">handmade by Kiran's Krochet</p>
     </div>
   </section>
@@ -59,22 +53,92 @@
     <h2 class="section-title">Featured Products</h2>
     <div class="card-grid">
       <div class="card">
-        <img src="blanket.png" alt="Crochet Blanket">
-        <h3>Cozy Blanket</h3>
+        <img src="Images/Crochet White Bag.jpg" alt="Crochet Blanket">
+        <h3>Cozy Bag</h3>
         <p>Soft, warm, and sustainable yarns.</p>
+        <div class="product-price">₹1000</div>
         <button class="card-btn">View Details</button>
+        <button class="add-cart-btn">Add to Cart</button>
+        <button class="wishlist-btn" aria-label="Add to Wishlist">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.1 21.35l-1.45-1.32C5.2 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.2 6.86-8.55 11.54l-1.35 1.31z"/></svg>
+        </button>
       </div>
       <div class="card">
-        <img src="amigurumi.png" alt="Crochet Amigurumi">
+        <img src="Images/Amigurimi.jpg" alt="Crochet Amigurumi">
         <h3>Amigurumi Bunny</h3>
         <p>Hand-stitched with love and care.</p>
+        <div class="product-price">₹1000</div>
         <button class="card-btn">View Details</button>
+        <button class="add-cart-btn">Add to Cart</button>
+        <button class="wishlist-btn" aria-label="Add to Wishlist">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.1 21.35l-1.45-1.32C5.2 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.2 6.86-8.55 11.54l-1.35 1.31z"/></svg>
+        </button>
       </div>
       <div class="card">
-        <img src="scarf.png" alt="Crochet Scarf">
+        <img src="Images/Hat.jpg" alt="Crochet Scarf">
         <h3>Winter Scarf</h3>
         <p>Stylish and cozy for cold days.</p>
+        <div class="product-price">₹1000</div>
         <button class="card-btn">View Details</button>
+        <button class="add-cart-btn">Add to Cart</button>
+        <button class="wishlist-btn" aria-label="Add to Wishlist">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.1 21.35l-1.45-1.32C5.2 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.2 6.86-8.55 11.54l-1.35 1.31z"/></svg>
+        </button>
+      </div>
+      <div class="card">
+        <img src="Images/Crochet Bag.jpg" alt="Crochet Bag">
+        <h3>Crochet Bag</h3>
+        <p>Classic, versatile, and handmade for everyday use.</p>
+        <div class="product-price">₹1000</div>
+        <button class="card-btn">View Details</button>
+        <button class="add-cart-btn">Add to Cart</button>
+        <button class="wishlist-btn" aria-label="Add to Wishlist">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.1 21.35l-1.45-1.32C5.2 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.2 6.86-8.55 11.54l-1.35 1.31z"/></svg>
+        </button>
+      </div>
+      <div class="card">
+        <img src="Images/Crochet Blue Bag.jpg" alt="Crochet Blue Bag">
+        <h3>Crochet Blue Bag</h3>
+        <p>Modern, minimal, and versatile in blue.</p>
+        <div class="product-price">₹1000</div>
+        <button class="card-btn">View Details</button>
+        <button class="add-cart-btn">Add to Cart</button>
+        <button class="wishlist-btn" aria-label="Add to Wishlist">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.1 21.35l-1.45-1.32C5.2 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.2 6.86-8.55 11.54l-1.35 1.31z"/></svg>
+        </button>
+      </div>
+      <div class="card">
+        <img src="Images/Crochet Hand Bag.jpg" alt="Crochet Hand Bag">
+        <h3>Crochet Hand Bag</h3>
+        <p>Perfect for outings, stylish and practical.</p>
+        <div class="product-price">₹1000</div>
+        <button class="card-btn">View Details</button>
+        <button class="add-cart-btn">Add to Cart</button>
+        <button class="wishlist-btn" aria-label="Add to Wishlist">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.1 21.35l-1.45-1.32C5.2 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.2 6.86-8.55 11.54l-1.35 1.31z"/></svg>
+        </button>
+      </div>
+      <div class="card">
+        <img src="Images/Crochet Pink Bag.jpg" alt="Crochet Pink Bag">
+        <h3>Crochet Pink Bag</h3>
+        <p>Chic and playful, perfect for any outing.</p>
+        <div class="product-price">₹1000</div>
+        <button class="card-btn">View Details</button>
+        <button class="add-cart-btn">Add to Cart</button>
+        <button class="wishlist-btn" aria-label="Add to Wishlist">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.1 21.35l-1.45-1.32C5.2 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.2 6.86-8.55 11.54l-1.35 1.31z"/></svg>
+        </button>
+      </div>
+      <div class="card">
+        <img src="Images/Crochet Rose Bag.jpg" alt="Crochet Rose Bag">
+        <h3>Crochet Rose Bag</h3>
+        <p>Elegant rose design, a true statement piece.</p>
+        <div class="product-price">₹1000</div>
+        <button class="card-btn">View Details</button>
+        <button class="add-cart-btn">Add to Cart</button>
+        <button class="wishlist-btn" aria-label="Add to Wishlist">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.1 21.35l-1.45-1.32C5.2 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.2 6.86-8.55 11.54l-1.35 1.31z"/></svg>
+        </button>
       </div>
     </div>
   </section>

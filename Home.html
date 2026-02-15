@@ -5,76 +5,164 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kiran's Krochet</title>
   <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
   <!-- Header -->
-<header class="site-header">
-  <!-- Logo + Tagline -->
-  <div class="logo-area">
-    <img src="Images\Kirans Krochet logo .png" alt="Kirans Krochet Logo" class="logo" width="350" height="250">
-    <div class="brand-text">
+  <header class="site-header">
+    <div class="logo-area">
+      <img src="Images/Kirans Krochet logo .png" alt="Kirans Krochet Logo" class="logo">
     </div>
-  </div>
-
-  <!-- Navigation -->
-  <nav class="nav-menu">
-    <ul>
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">SHOP</a></li>
-      <li><a href="#">ABOUT</a></li>
-      <li><a href="#">CONTACT</a></li>
-    </ul>
-  </nav>
-
-  <!-- Search + Shop + Cart -->
-  <div class="header-actions">
-    <input type="text" placeholder="Search patterns, yarns..." class="search-bar">
-    <button class="shop-btn">Shop Now</button>
-    <div class="cart-icon">
-      <span class="cart">&#128722;</span>
-      <span class="badge">2</span>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="Shop.html">SHOP</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="search-bar-container">
+        <input type="text" placeholder="Search patterns, yarns..." class="search-bar" id="searchBar">
+        <button class="search-icon-btn" id="searchIconBtn" tabindex="-1" aria-label="Search">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#86868b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <div id="searchSuggestions" class="search-suggestions"></div>
+      </div>
+      <button class="shop-btn" onclick="window.location.href='Shop.html'">Shop Now</button>
+      <div class="cart-icon">
+        <span class="cart">&#128722;</span>
+        <span class="badge">0</span>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
+  <!-- Hero Section (Apple-style) -->
+  <section class="hero apple-hero">
     <div class="hero-text">
       <h2>Cozy crochet pieces, made by Kiran</h2>
       <p>Discover handcrafted blankets, amigurumi, and accessories — each piece stitched with care and sustainable yarns.</p>
       <div class="hero-buttons">
-        <a href="#" class="btn">Browse Collection</a>
-        <a href="#" class="btn secondary">View Featured</a>
+        <a href="#our-crochet-collection" class="btn">Browse Collection</a>
+        <a href="#featured-gallery" class="btn secondary">View Featured</a>
       </div>
     </div>
-    <div class="hero-image">
-      <span class="best-seller">Best Seller</span>
-      <img src="Images\Amigurimi.jpg" alt="Crocheted Bunny">
-      <p class="handmade-tag">handmade by Kiran's Krochet</p>
+    <div class="hero-image-large">
+      <img src="Images/Amigurimi.jpg" alt="Crocheted Bunny" class="apple-hero-img">
     </div>
   </section>
 
-  <!-- Product Cards -->
-  <section class="product-section">
-    <h2 class="section-title">Featured Products</h2>
-    <div class="card-grid">
-      <div class="card">
-        <img src="blanket.png" alt="Crochet Blanket">
-        <h3>Cozy Blanket</h3>
-        <p>Soft, warm, and sustainable yarns.</p>
-        <button class="card-btn">View Details</button>
+  <!-- Apple-style Product Gallery (Featured Products Only) -->
+  <section class="apple-gallery-section" id="gallery">
+    <div class="apple-gallery-container">
+      <button class="gallery-arrow left" aria-label="Previous product">&#10094;</button>
+      <div class="apple-gallery-track">
+        <div class="apple-gallery-slide active">
+          <img src="Images/Crochet Bag.jpg" alt="Crochet Bag">
+          <div class="gallery-caption">
+            <h3>Crochet Bag</h3>
+            <p>Classic, versatile, and handmade for everyday use.</p>
+          </div>
+        </div>
+        <div class="apple-gallery-slide">
+          <img src="Images/Crochet Blue Bag.jpg" alt="Crochet Blue Bag">
+          <div class="gallery-caption">
+            <h3>Crochet Blue Bag</h3>
+            <p>Modern, minimal, and versatile in blue.</p>
+          </div>
+        </div>
+        <div class="apple-gallery-slide">
+          <img src="Images/Crochet Hand Bag.jpg" alt="Crochet Hand Bag">
+          <div class="gallery-caption">
+            <h3>Crochet Hand Bag</h3>
+            <p>Perfect for outings, stylish and practical.</p>
+          </div>
+        </div>
+        <div class="apple-gallery-slide">
+          <img src="Images/Crochet Pink Bag.jpg" alt="Crochet Pink Bag">
+          <div class="gallery-caption">
+            <h3>Crochet Pink Bag</h3>
+            <p>Chic and playful, perfect for any outing.</p>
+          </div>
+        </div>
+        <div class="apple-gallery-slide">
+          <img src="Images/Crochet Rose Bag.jpg" alt="Crochet Rose Bag">
+          <div class="gallery-caption">
+            <h3>Crochet Rose Bag</h3>
+            <p>Elegant rose design, a true statement piece.</p>
+          </div>
+        </div>
+        <div class="apple-gallery-slide">
+          <img src="Images/Crochet White Bag.jpg" alt="Cozy Bag">
+          <div class="gallery-caption">
+            <h3>Cozy Bag</h3>
+            <p>Soft, warm, and sustainable yarns.</p>
+          </div>
+        </div>
+        <div class="apple-gallery-slide">
+          <img src="Images/Amigurimi.jpg" alt="Amigurumi Teddy">
+          <div class="gallery-caption">
+            <h3>Amigurumi Teddy</h3>
+            <p>Hand-stitched with love and care.</p>
+          </div>
+        </div>
+        <div class="apple-gallery-slide">
+          <img src="Images/Hat.jpg" alt="Winter Hat">
+          <div class="gallery-caption">
+            <h3>Winter Hat</h3>
+            <p>Stylish and cozy for cold days.</p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="amigurumi.png" alt="Crochet Amigurumi">
-        <h3>Amigurumi Bunny</h3>
-        <p>Hand-stitched with love and care.</p>
-        <button class="card-btn">View Details</button>
+      <button class="gallery-arrow right" aria-label="Next product">&#10095;</button>
+    </div>
+    <div class="gallery-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- All Products Gallery -->
+  <section class="all-products-gallery" id="our-crochet-collection">
+    <h2 class="section-title">Our Crochet Collection</h2>
+    <div class="all-products-grid">
+      <div class="product-thumb">
+        <img src="Images/Crochet Bag.jpg" alt="Crochet Bag">
+        <span>Crochet Bag</span>
       </div>
-      <div class="card">
-        <img src="scarf.png" alt="Crochet Scarf">
-        <h3>Winter Scarf</h3>
-        <p>Stylish and cozy for cold days.</p>
-        <button class="card-btn">View Details</button>
+      <div class="product-thumb">
+        <img src="Images/Crochet Blue Bag.jpg" alt="Crochet Blue Bag">
+        <span>Crochet Blue Bag</span>
+      </div>
+      <div class="product-thumb">
+        <img src="Images/Crochet Hand Bag.jpg" alt="Crochet Hand Bag">
+        <span>Crochet Hand Bag</span>
+      </div>
+      <div class="product-thumb">
+        <img src="Images/Crochet Pink Bag.jpg" alt="Crochet Pink Bag">
+        <span>Crochet Pink Bag</span>
+      </div>
+      <div class="product-thumb">
+        <img src="Images/Crochet Rose Bag.jpg" alt="Crochet Rose Bag">
+        <span>Crochet Rose Bag</span>
+      </div>
+      <div class="product-thumb">
+        <img src="Images/Crochet White Bag.jpg" alt="Cozy Bag">
+        <span>Cozy Bag</span>
+      </div>
+      <div class="product-thumb">
+        <img src="Images/Amigurimi.jpg" alt="Amigurumi Teddy">
+        <span>Amigurumi Teddy</span>
+      </div>
+      <div class="product-thumb">
+        <img src="Images/Hat.jpg" alt="Winter Hat">
+        <span>Winter Hat</span>
       </div>
     </div>
   </section>
